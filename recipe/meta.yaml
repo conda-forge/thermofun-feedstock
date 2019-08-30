@@ -1,4 +1,4 @@
-{% set version = "0.1.12" %}
+{% set version = "0.1.13" %}
 
 package:
   name: thermofun
@@ -6,11 +6,10 @@ package:
 
 source:
   url: https://github.com/thermomod/thermofun/archive/v{{ version }}.tar.gz
-  sha256: e58e554105cc20064544301205bb1a7d93004dc00e514710e414096f7ff5772e
+  sha256: ee4bb28361f0137f6ddbe38d83a9f5a67d773179f02e194c71344e513f567e8a
 
 build:
   number: 0
-#  skip: true  # [win]
 
 requirements:
   build:
