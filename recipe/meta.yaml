@@ -9,8 +9,7 @@ source:
   sha256: ee4bb28361f0137f6ddbe38d83a9f5a67d773179f02e194c71344e513f567e8a
 
 build:
-  number: 0
-#  skip: true  # [win]
+  number: 1
 
 requirements:
   build:
@@ -21,12 +20,12 @@ requirements:
 
   host:
     - boost
+    - python
     - pybind11>=2.3.0
     - nlohmann_json>=3.6.1
 
   run:
     - boost
-    - python
 
 test:
   files:
