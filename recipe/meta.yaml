@@ -19,8 +19,8 @@ requirements:
     - ninja
   host:
     - boost
-    - pybind11
-    - nlohmann_json
+    - pybind11>=2.3.0
+    - nlohmann_json>=3.6.1
     - numpy 1.14.*
     - python
   run:
