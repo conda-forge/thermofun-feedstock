@@ -30,6 +30,11 @@ requirements:
 test:
   files:
     - test/
+    
+  requires:
+    - {{ compiler('cxx') }}
+    - cmake
+    - ninja
 
 about:
   home: https://thermohub.org/thermofun/thermofun/
