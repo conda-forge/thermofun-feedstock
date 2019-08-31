@@ -30,7 +30,6 @@ requirements:
 test:
   files:
     - test/
-    
   requires:
     - {{ compiler('cxx') }}
     - cmake
