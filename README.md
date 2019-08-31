@@ -15,7 +15,14 @@ Current build status
 ====================
 
 
-<table>
+<table><tr>
+    <td>Appveyor</td>
+    <td>
+      <a href="https://ci.appveyor.com/project/conda-forge/thermofun-feedstock/branch/master">
+        <img alt="windows" src="https://img.shields.io/appveyor/ci/conda-forge/thermofun-feedstock/master.svg?label=Windows">
+      </a>
+    </td>
+  </tr>
     
   <tr>
     <td>Azure</td>
