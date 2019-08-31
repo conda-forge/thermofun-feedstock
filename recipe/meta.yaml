@@ -10,6 +10,7 @@ source:
 
 build:
   number: 0
+  skip: True  # [py2k or osx or c_compiler == 'toolchain_c']
 
 requirements:
   build:
