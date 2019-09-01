@@ -10,5 +10,5 @@ cmake .. ^
 if errorlevel 1 exit 1
 
 REM Build step
-ninja -v bootcd
+ninja -v
 if errorlevel 1 exit 1
