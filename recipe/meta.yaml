@@ -10,10 +10,11 @@ source:
 
 build:
   number: 0
-  skip: True  # [py2k or osx or c_compiler == 'toolchain_c']
+#  skip: True  # [py2k or osx or c_compiler == 'toolchain_c']
 
 requirements:
   build:
+    - {{ compiler('c') }}
     - {{ compiler('cxx') }}
     - cmake>=3.13
     - ninja
@@ -28,12 +29,8 @@ requirements:
     - python
     - {{ pin_compatible('numpy') }}
 test:
-  files:
-    - test/
-  requires:
-    - {{ compiler('cxx') }}
-    - cmake
-    - ninja
+  imports:
+    - thermofun
 
 about:
   home: https://thermohub.org/thermofun/thermofun/
