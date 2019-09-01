@@ -2,6 +2,6 @@ mkdir build
 cd build
 
 echo "Configuring..."
-cmake -S . -B build
+cmake .. -S . -B build
 echo "Building..."
-cmake --build build --config %CONFIGURATION% --target install
+cmake .. --build build --config %CONFIGURATION% --target install
