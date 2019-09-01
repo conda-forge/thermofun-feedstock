@@ -28,9 +28,6 @@ requirements:
     - boost
     - python
     - {{ pin_compatible('numpy') }}
-test:
-  imports:
-    - thermofun
 
 about:
   home: https://thermohub.org/thermofun/thermofun/
