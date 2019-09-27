@@ -10,9 +10,14 @@ source:
 
 build:
   number: 0
-  skip: True
 #  skip: True  # [py2k or osx or c_compiler == 'toolchain_c']
-
+python:
+  - 2.7
+  - 3.6
+  - 3.7
+vc:
+  - 14
+  - 15
 requirements:
   build:
     - {{ compiler('c') }}
