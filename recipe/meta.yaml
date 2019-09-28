@@ -9,7 +9,7 @@ source:
   sha256: e41eaf2b5dbf96e641e44a0e9a2aaae1abd110cdc9581702d5d026a9c849a5d4
 
 build:
-  number: 2
+  number: 3
 #  skip: True  # [py2k or osx or c_compiler == 'toolchain_c']
 requirements:
   build:
@@ -18,15 +18,16 @@ requirements:
     - cmake >=3.13
     - ninja
   host:
-    - boost
     - pybind11 >=2.3.0
     - nlohmann_json >=3.6.1
     - numpy 1.14.*
     - python
   run:
-    - boost
     - python
     - {{ pin_compatible('numpy') }}
+test:
+  imports:
+    - thermofun
 
 about:
   home: https://thermohub.org/thermofun/thermofun/
