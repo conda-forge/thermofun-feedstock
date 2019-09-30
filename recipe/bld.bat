@@ -3,7 +3,6 @@ cd build
 
 if "%VS_MAJOR%" == "9" (
 ECHO VS 2008
-cp C:/ProgramData/chocolatey/lib/mingw/tools/install/mingw64/lib/libpython2.7.dll.a C:/ProgramData/chocolatey/lib/mingw/tools/install/mingw64/lib/libpython27.dll.a
 set CXXFLAGS=%CXXFLAGS:-D_hypot=hypot
 ) else (
 REM This is a fix for a CMake bug where it crashes because of the "/GL" flag
