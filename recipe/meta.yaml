@@ -11,12 +11,13 @@ source:
 build:
   number: 3
 #  skip: True  # [py2k or osx or c_compiler == 'toolchain_c']
+  skip: True  # [win and vc<14]
 requirements:
   build:
-    - {{ compiler('c') }}
-    - {{ compiler('cxx') }}
     - cmake >=3.13
     - ninja
+    - {{ compiler('c') }}
+    - {{ compiler('cxx') }}
   host:
     - pybind11 >=2.3.0
     - nlohmann_json >=3.6.1
