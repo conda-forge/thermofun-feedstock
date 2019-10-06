@@ -3,6 +3,7 @@ mkdir build
 cd build
 # Configure step
 cmake -DTHERMOFUN_PYTHON_INSTALL_PREFIX=$PREFIX \
+    -DPYTHON_EXECUTABLE:FILEPATH=/usr/bin/python \
     -DCMAKE_BUILD_TYPE=Release \
     -DCMAKE_INSTALL_PREFIX=$PREFIX \
     -DCMAKE_INSTALL_LIBDIR=lib \
