@@ -1,7 +1,7 @@
 #!/bin/bash
 mkdir build
 cd build
-python_path = which python
+python_path=$(which python)
 # Configure step
 cmake -DTHERMOFUN_PYTHON_INSTALL_PREFIX=$PREFIX \
     -DPYTHON_EXECUTABLE:FILEPATH=$python_path \
