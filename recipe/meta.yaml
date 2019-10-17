@@ -1,4 +1,4 @@
-{% set version = "0.2.0" %}
+{% set version = "0.2.1" %}
 
 package:
   name: thermofun
@@ -6,10 +6,10 @@ package:
 
 source:
   url: https://github.com/thermomod/thermofun/archive/v{{ version }}.tar.gz
-  sha256: e41eaf2b5dbf96e641e44a0e9a2aaae1abd110cdc9581702d5d026a9c849a5d4
+  sha256: f1be650ed512811ad2cd925a59888c7948387ac78c7bfbe1d16e973e4a6447ab
 
 build:
-  number: 3
+  number: 0
 #  skip: True  # [py2k or osx or c_compiler == 'toolchain_c']
   skip: True  # [win and vc<14]
 requirements:
@@ -20,7 +20,7 @@ requirements:
     - {{ compiler('cxx') }}
   host:
     - pybind11 >=2.3.0
-    - nlohmann_json >=3.6.1
+    - nlohmann_json >=3.7.0
     - numpy 1.14.*
     - python
   run:
