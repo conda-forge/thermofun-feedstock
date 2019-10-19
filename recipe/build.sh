@@ -3,10 +3,8 @@ mkdir build
 cd build
 python_path=$(which python)
 # Configure step
-cmake -DTHERMOFUN_PYTHON_INSTALL_PREFIX=$PREFIX \
-    -DPYTHON_EXECUTABLE:FILEPATH=$python_path \
+cmake -DPYTHON_EXECUTABLE:FILEPATH=$python_path \
     -DCMAKE_BUILD_TYPE=Release \
-    -DCMAKE_INSTALL_PREFIX=$PREFIX \
     -DCMAKE_INSTALL_LIBDIR=lib \
     ..
 # Build step
