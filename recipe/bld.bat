@@ -12,6 +12,7 @@ set CFLAGS=%CFLAGS:-GL=%
 )
 
 cmake -G Ninja ^
+    -DTHERMOFUN_PYTHON_INSTALL_PREFIX:PATH="%PREFIX%" ^
     -DCMAKE_BUILD_TYPE=Release ^
     ..
 ninja install
