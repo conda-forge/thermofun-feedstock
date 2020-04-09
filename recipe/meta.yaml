@@ -12,7 +12,6 @@ build:
   number: 0
 #  skip: True  # [py2k or osx or c_compiler == 'toolchain_c']
   skip: true  # [win and vc<14]
-  skip: true  # [win and vc>14]
 requirements:
   build:
     - cmake
