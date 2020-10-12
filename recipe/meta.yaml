@@ -9,7 +9,7 @@ source:
   sha256: ddf6f2e7ac9968e2decec93e6d2fced3851de3eefefe7efd0429ee50c08cebae
 
 build:
-  number: 0
+  number: 1
 #  skip: True  # [py2k or osx or c_compiler == 'toolchain_c']
   skip: true  # [win and vc<14]
 requirements:
