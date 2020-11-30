@@ -1,4 +1,4 @@
-{% set version = "0.3.0" %}
+{% set version = "0.3.4" %}
 
 package:
   name: thermofun
@@ -6,12 +6,12 @@ package:
 
 source:
   url: https://github.com/thermomod/thermofun/archive/v{{ version }}.tar.gz
-  sha256: 75f25553f096270d04216e018128245132cc7dfbc5d5cdfc39d42d3796fb9891
+  sha256: ddf6f2e7ac9968e2decec93e6d2fced3851de3eefefe7efd0429ee50c08cebae
 
 build:
-  number: 0
+  number: 1
 #  skip: True  # [py2k or osx or c_compiler == 'toolchain_c']
-  skip: True  # [win and vc<14]
+  skip: true  # [win and vc<14]
 requirements:
   build:
     - cmake
