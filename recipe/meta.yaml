@@ -15,19 +15,17 @@ build:
 requirements:
   build:
     - cmake
+    - make
     - ninja
     - {{ compiler('c') }}
     - {{ compiler('cxx') }}
   host:
-    - chemicalfun
     - pybind11
     - nlohmann_json >=3.7.0
-    - numpy
-    - python
-  run:
     - python
     - chemicalfun
-    - nlohmann_json >=3.7.0
+  run:
+    - python
 test:
   imports:
     - thermofun
