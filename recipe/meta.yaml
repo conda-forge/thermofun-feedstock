@@ -27,8 +27,6 @@ requirements:
     - nlohmann_json >=3.7.0
     - python
     - chemicalfun
-    - pytest
-    - setuptools
   run:
     - python
     - chemicalfun
