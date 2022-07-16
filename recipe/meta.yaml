@@ -25,13 +25,12 @@ requirements:
     - pybind11
     - nlohmann_json >=3.7.0
     - python
-    - chemicalfun
-    - fmt >=8.1.1
+    - chemicalfun >=0.1.3
+    - setuptools=59.7.0
   run:
     - python
-    - chemicalfun
+    - chemicalfun >=0.1.3
     - nlohmann_json >=3.7.0
-    - fmt >=8.1.1
 test:
   imports:
     - thermofun
