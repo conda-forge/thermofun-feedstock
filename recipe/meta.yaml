@@ -5,11 +5,11 @@ package:
   version: {{ version }}
 
 source:
-  #url: https://github.com/thermomod/thermofun/archive/v{{ version }}.tar.gz
-  #sha256: bd863174a272ddf166643312bc4b759cb429ed0230e9023678357673e56569b2
+  url: https://github.com/thermomod/thermofun/archive/v{{ version }}.tar.gz
+  sha256: a94946338a86e76eda91877631bcf4c23d42ba2b58c18821a86aeb7339564106
 
-  git_url: https://dmiron@bitbucket.org/gems4/thermofun.git
-  git_rev: test-17
+  #git_url: https://dmiron@bitbucket.org/gems4/thermofun.git
+  #git_rev: test-17
 
   #git_url: https://github.com/thermohub/thermofun.git
   #git_rev: master
