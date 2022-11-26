@@ -28,14 +28,14 @@ requirements:
     - pybind11
     - nlohmann_json >=3.7.0
     - python
-    - chemicalfun =0.1.4
-    - spdlog =1.10.0
+    - chemicalfun =0.1.6
+#    - spdlog =1.10.0
 #    - setuptools =59.7.0
     - pybind11-abi
   run:
     - python
-    - spdlog =1.10.0
-    - chemicalfun =0.1.4
+#    - spdlog =1.10.0
+    - chemicalfun =0.1.6
     - nlohmann_json >=3.7.0
 test:
   imports:
