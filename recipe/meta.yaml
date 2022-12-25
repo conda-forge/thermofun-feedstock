@@ -15,7 +15,7 @@ source:
   #git_rev: master
 
 build:
-  number: 0
+  number: 1
 #  skip: True  # [py2k or osx or c_compiler == 'toolchain_c']
   skip: true  # [win and vc<14]
 requirements:
@@ -28,14 +28,14 @@ requirements:
     - pybind11
     - nlohmann_json >=3.7.0
     - python
-    - chemicalfun =0.1.6
+    - chemicalfun >=0.1.7
 #    - spdlog =1.10.0
 #    - setuptools =59.7.0
     - pybind11-abi
   run:
     - python
 #    - spdlog =1.10.0
-    - chemicalfun =0.1.6
+    - chemicalfun >=0.1.7
     - nlohmann_json >=3.7.0
 test:
   imports:
