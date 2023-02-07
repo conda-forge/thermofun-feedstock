@@ -1,4 +1,4 @@
-{% set version = "0.4.1" %}
+{% set version = "0.4.2" %}
 
 package:
   name: thermofun
@@ -6,7 +6,7 @@ package:
 
 source:
   url: https://github.com/thermomod/thermofun/archive/v{{ version }}.tar.gz
-  sha256: 4f0cf27876a18e9be1c0d882b1ec0a031c41c29d6b6cb541f058ea9be958c2a0
+  sha256: 977990f17fa1b54b7acfa3e4bc0d084b7b2f6b0598d0fb58a68b7ab5fffa74b2
 
   #git_url: https://dmiron@bitbucket.org/gems4/thermofun.git
   #git_rev: test-17
@@ -15,7 +15,7 @@ source:
   #git_rev: master
 
 build:
-  number: 1
+  number: 0
 #  skip: True  # [py2k or osx or c_compiler == 'toolchain_c']
   skip: true  # [win and vc<14]
 requirements:
