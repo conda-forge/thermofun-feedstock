@@ -45,7 +45,7 @@ about:
   home: https://thermohub.org/thermofun/thermofun/
   license: LGPL-3.0-only
   license_family: LGPL
-  license_file: COPYING
+  license_file: LICENSE
   summary: Standalone library for calculating temperature and pressure corrections of thermodynamic data for substances and reactions.
   doc_url: https://thermohub.org/thermofun/thermofun/
   dev_url: https://github.com/thermomod/thermofun
