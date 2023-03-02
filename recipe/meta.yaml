@@ -25,6 +25,7 @@ requirements:
     - {{ compiler('c') }}
     - {{ compiler('cxx') }}
   host:
+    - pip
     - pybind11
     - nlohmann_json >=3.7.0
     - python
