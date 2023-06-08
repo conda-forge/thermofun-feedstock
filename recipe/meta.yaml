@@ -1,4 +1,4 @@
-{% set version = "0.4.3" %}
+{% set version = "0.4.4" %}
 
 package:
   name: thermofun
@@ -6,7 +6,7 @@ package:
 
 source:
   url: https://github.com/thermomod/thermofun/archive/v{{ version }}.tar.gz
-  sha256: 76c02ba5c0f417e14153ffa98004190d20bc1c526f7b5c43e2237fb649940e3c
+  sha256: d5ca71461eeeb7e2343bad15131d7d5c0a271d495f869243b28677f82386ee6d
 
   #git_url: https://dmiron@bitbucket.org/gems4/thermofun.git
   #git_rev: test-17
@@ -29,14 +29,14 @@ requirements:
     - pybind11
     - nlohmann_json >=3.7.0
     - python
-    - chemicalfun >=0.1.7
+    - chemicalfun >=0.1.9
 #    - spdlog =1.10.0
 #    - setuptools =59.7.0
     - pybind11-abi
   run:
     - python
 #    - spdlog =1.10.0
-    - chemicalfun >=0.1.7
+    - chemicalfun >=0.1.9
     - nlohmann_json >=3.7.0
 test:
   imports:
