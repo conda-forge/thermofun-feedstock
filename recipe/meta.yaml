@@ -5,14 +5,14 @@ package:
   version: {{ version }}
 
 source:
-  #url: https://github.com/thermomod/thermofun/archive/v{{ version }}.tar.gz
-  #sha256: 9f3bcd20112155f5b0d65e39768eceaef3f041485812c9211c281a318b3f057d
+  url: https://github.com/thermomod/thermofun/archive/v{{ version }}.tar.gz
+  sha256: 9f3bcd20112155f5b0d65e39768eceaef3f041485812c9211c281a318b3f057d
 
   #git_url: https://dmiron@bitbucket.org/gems4/thermofun.git
   #git_rev: test-17
 
-  git_url: https://github.com/thermohub/thermofun.git
-  git_rev: gdmiron-patch-1
+  #git_url: https://github.com/thermohub/thermofun.git
+  #git_rev: gdmiron-patch-1
 
 build:
   number: 0
