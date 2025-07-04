@@ -329,4 +329,5 @@ Feedstock Maintainers
 
 * [@allanleal](https://github.com/allanleal/)
 * [@gdmiron](https://github.com/gdmiron/)
+* [@sdmytrievs](https://github.com/sdmytrievs/)
 
