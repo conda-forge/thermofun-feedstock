@@ -17,7 +17,7 @@ pybind11_abi:
 python:
 - 3.9.* *_cpython
 spdlog:
-- '1.14'
+- '1.15'
 target_platform:
 - win-64
 vc:
