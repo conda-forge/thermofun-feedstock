@@ -20,8 +20,6 @@ build:
   skip: true  # [win and vc<14]
 requirements:
   build:
-    - setuptools
-    - pip
     - cmake
     - ninja
     - {{ compiler('c') }}
@@ -31,11 +29,11 @@ requirements:
     - cross-python_{{ target_platform }}     # [build_platform != target_platform]
     - pybind11                               # [build_platform != target_platform]
   host:
-    - setuptools
-    - pip
     - pybind11
     - nlohmann_json >=3.7.0
     - python
+    - pip
+    - setuptools
     - chemicalfun >=0.1.9
     - spdlog
 #    - setuptools =59.7.0
