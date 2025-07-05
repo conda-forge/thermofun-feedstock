@@ -21,6 +21,7 @@ build:
 requirements:
   build:
     - setuptools
+    - pip
     - cmake
     - ninja
     - {{ compiler('c') }}
