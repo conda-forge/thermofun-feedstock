@@ -1,11 +1,20 @@
 #!/bin/bash
-mkdir build
-cd build
-python_path=$(which python)
-# Configure step
-cmake -GNinja .. -DPYTHON_EXECUTABLE:FILEPATH=$python_path \
-    -DCMAKE_BUILD_TYPE=Release \
-    -DCMAKE_INSTALL_LIBDIR=lib
 
+set -u
+ferr(){
+    echo "$@"
+    exit 1
+}
+
+mkdir -p build
+cd build
+
+# Configure step
+cmake -DPYTHON_EXECUTABLE:FILEPATH="$PYTHON" \
+      -DCMAKE_BUILD_TYPE=Release \
+      -DCMAKE_INSTALL_PREFIX="$PREFIX" \
+      -DCMAKE_INSTALL_LIBDIR=$PREFIX/lib \
+      ..
 # Build step
-ninja install
+make -j${CPU_COUNT}
+make install

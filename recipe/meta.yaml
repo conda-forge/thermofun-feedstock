@@ -15,24 +15,26 @@ source:
   #git_rev: gdmiron-patch-1
 
 build:
-  number: 1
+  number: 2
 #  skip: True  # [py2k or osx or c_compiler == 'toolchain_c']
   skip: true  # [win and vc<14]
 requirements:
   build:
-    - cmake
-    - ninja
-    - {{ compiler('c') }}
-    - {{ stdlib("c") }}
     - {{ compiler('cxx') }}
+    - {{ compiler('c') }}
+    - {{ stdlib('c') }}
+    - cmake
+    - ninja  # [win]
+    - make   # [unix]
     - python                                 # [build_platform != target_platform]
     - cross-python_{{ target_platform }}     # [build_platform != target_platform]
     - pybind11                               # [build_platform != target_platform]
   host:
-    - pip
     - pybind11
     - nlohmann_json >=3.7.0
     - python
+    - pip
+    - setuptools
     - chemicalfun >=0.1.9
     - spdlog
 #    - setuptools =59.7.0
