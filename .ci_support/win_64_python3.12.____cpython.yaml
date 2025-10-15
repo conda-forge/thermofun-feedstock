@@ -17,11 +17,8 @@ pybind11_abi:
 python:
 - 3.12.* *_cpython
 spdlog:
-- '1.15'
+- '1.16'
 target_platform:
 - win-64
 vc:
 - '14'
-zip_keys:
-- - python
-  - channel_sources
