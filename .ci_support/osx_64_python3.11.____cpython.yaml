@@ -24,12 +24,10 @@ pin_run_as_build:
   python:
     min_pin: x.x
     max_pin: x.x
-pybind11_abi:
-- '11'
 python:
 - 3.11.* *_cpython
 spdlog:
-- '1.16'
+- '1.17'
 target_platform:
 - osx-64
 zip_keys:
