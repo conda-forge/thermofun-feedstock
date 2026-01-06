@@ -15,7 +15,7 @@ source:
   #git_rev: gdmiron-patch-1
 
 build:
-  number: 0
+  number: 1
 #  skip: True  # [py2k or osx or c_compiler == 'toolchain_c']
   skip: true  # [win and vc<14]
 
