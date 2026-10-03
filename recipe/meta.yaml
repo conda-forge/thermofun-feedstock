@@ -1,4 +1,4 @@
-{% set version = "0.6.3" %}
+{% set version = "0.7.0" %}
 
 package:
   name: thermofun
@@ -6,7 +6,7 @@ package:
 
 source:
   url: https://github.com/thermomod/thermofun/archive/v{{ version }}.tar.gz
-  sha256: d8ae3410b5bbd93a1aee70faa70f6e8f1a0b55a8f2229e2bbd00dc5ab7de1253
+  sha256: a90ad90a344fa12b74143c2e364a8f637c3c1044b4d549d8c37d3123dab1debe
 
   #git_url: https://dmiron@bitbucket.org/gems4/thermofun.git
   #git_rev: test-17
@@ -15,7 +15,7 @@ source:
   #git_rev: gdmiron-patch-1
 
 build:
-  number: 1
+  number: 0
 #  skip: True  # [py2k or osx or c_compiler == 'toolchain_c']
   skip: true  # [win and vc<14]
 
