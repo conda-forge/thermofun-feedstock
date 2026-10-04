@@ -39,14 +39,14 @@ requirements:
     - wheel
     - pybind11
     - chemicalfun >=0.1.13
-    - autodiff >=1.1.1
+    - autodiff >=1.1.1  # [not (aarch64 or ppc64le)]
     - spdlog
     - nlohmann_json >=3.7.0
 
   run:
     - python
     - chemicalfun >=0.1.13
-    - autodiff >=1.1.1
+    - autodiff >=1.1.1  # [not (aarch64 or ppc64le)]
     - spdlog
     - nlohmann_json >=3.7.0
 
