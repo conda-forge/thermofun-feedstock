@@ -1,5 +1,10 @@
 {% set version = "0.7.0" %}
 
+# autodiff has no conda package for python 3.15, linux-aarch64 or linux-ppc64le.
+# When it gets one, remove that case from the line below.
+{% set has_autodiff = true %}
+{% set has_autodiff = false %}  # [py>=315 or aarch64 or ppc64le]
+
 package:
   name: thermofun
   version: {{ version }}
@@ -15,7 +20,7 @@ source:
   #git_rev: gdmiron-patch-1
 
 build:
-  number: 0
+  number: 1
 #  skip: True  # [py2k or osx or c_compiler == 'toolchain_c']
   skip: true  # [win and vc<14]
 
@@ -39,12 +44,18 @@ requirements:
     - wheel
     - pybind11
     - chemicalfun >=0.1.13
+    {% if has_autodiff %}
+    - autodiff >=1.1.1
+    {% endif %}
     - spdlog
     - nlohmann_json >=3.7.0
 
   run:
     - python
     - chemicalfun >=0.1.13
+    {% if has_autodiff %}
+    - {{ pin_compatible('autodiff', min_pin='x.x', max_pin='x') }}
+    {% endif %}
     - spdlog
     - nlohmann_json >=3.7.0
 
