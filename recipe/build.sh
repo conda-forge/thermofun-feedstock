@@ -9,12 +9,13 @@ ferr(){
 mkdir -p build
 cd build
 
-# No autodiff package exists for these platforms: build without derivatives
-# (ddt and ddp are 0), the same way the installed config then does not ask for autodiff.
-AUTODIFF=ON
-case "${target_platform}" in
-    linux-aarch64|linux-ppc64le) AUTODIFF=OFF ;;
-esac
+# Use autodiff when its package is installed (none exists for linux-aarch64,
+# linux-ppc64le or python 3.15). Without it, derivatives (ddt and ddp) are 0.
+AUTODIFF=OFF
+if [ -n "$(find "$PREFIX" -iname 'autodiff*config.cmake' 2>/dev/null | head -1)" ]; then
+    AUTODIFF=ON
+fi
+echo "TFUN_USE_AUTODIFF=${AUTODIFF}"
 
 # Configure step
 cmake -DPYTHON_EXECUTABLE:FILEPATH="$PYTHON" \
