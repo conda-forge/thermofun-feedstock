@@ -1,4 +1,4 @@
-{% set version = "0.7.0" %}
+{% set version = "0.7.1" %}
 
 # autodiff has no conda package for python 3.15, linux-aarch64 or linux-ppc64le.
 # When it gets one, remove that case from the line below.
@@ -11,7 +11,7 @@ package:
 
 source:
   url: https://github.com/thermomod/thermofun/archive/v{{ version }}.tar.gz
-  sha256: a90ad90a344fa12b74143c2e364a8f637c3c1044b4d549d8c37d3123dab1debe
+  sha256: d12ef613f25f1b30f2f442b5c084a95c75d0371c389d2d8829993c727ad2cce1
 
   #git_url: https://dmiron@bitbucket.org/gems4/thermofun.git
   #git_rev: test-17
@@ -20,7 +20,7 @@ source:
   #git_rev: gdmiron-patch-1
 
 build:
-  number: 1
+  number: 0
 #  skip: True  # [py2k or osx or c_compiler == 'toolchain_c']
   skip: true  # [win and vc<14]
 
